@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">SelfDestructingMessage</string>
+    <string name="parse_app_id">XmxYUD0bBuYbE0DoQBkaiFmZHxKlBpFkM2ECLlVs</string>
+    <string name="parse_client_key">rJ6hXzuXQWAgkQrBFixPJLLzg710MjQB2kS3sBHj</string>
 </resources>
