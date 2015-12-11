@@ -1,6 +1,5 @@
 apply plugin: 'com.android.application'
 apply plugin: 'com.parse'
-apply plugin: 'com.neenbedankt.android-apt'
 
 buildscript {
     repositories {
@@ -9,7 +8,6 @@ buildscript {
     }
     dependencies {
         classpath 'com.parse.tools:gradle:1.+'
-        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
     }
 }
 
@@ -37,6 +35,5 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.1.1'
     compile 'com.parse:parse-android:1.11.0'
-    compile 'com.jakewharton:butterknife:8.0.0-SNAPSHOT'
-    apt 'com.jakewharton:butterknife-compiler:8.0.0-SNAPSHOT'
+    compile 'com.jakewharton:butterknife:7.0.1'
 }
