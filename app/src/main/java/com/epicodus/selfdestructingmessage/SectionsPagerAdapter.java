@@ -1,12 +1,10 @@
 package com.epicodus.selfdestructingmessage;
 
-
 import android.content.Context;
-import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
-import com.epicodus.selfdestructingmessage.MainActivity.DummySectionFragment;
+
 import java.util.Locale;
 
 public class SectionsPagerAdapter extends FragmentPagerAdapter {
@@ -19,17 +17,24 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        Fragment fragment = new DummySectionFragment();
-        Bundle args = new Bundle();
-        args.putInt(DummySectionFragment.ARG_SECTION_NUMBER, position + 1);
-        fragment.setArguments(args);
-        return fragment;
+//        Fragment fragment = new DummySectionFragment();
+//        Bundle args = new Bundle();
+//        args.putInt(DummySectionFragment.ARG_SECTION_NUMBER, position + 1);
+//        fragment.setArguments(args);
+
+        switch(position) {
+            case 0:
+                return new InboxFragment();
+            case 1:
+                return new FriendsFragment();
+        }
+
+        return null;
     }
 
     @Override
     public int getCount() {
-        // Show 3 total pages.
-        return 3;
+        return 2;
     }
 
     @Override
@@ -40,8 +45,8 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
                 return mContext.getString(R.string.title_section1).toUpperCase(l);
             case 1:
                 return mContext.getString(R.string.title_section2).toUpperCase(l);
-            case 2:
-                return mContext.getString(R.string.title_section3).toUpperCase(l);
+//            case 2:
+//                return mContext.getString(R.string.title_section3).toUpperCase(l);
         }
         return null;
     }

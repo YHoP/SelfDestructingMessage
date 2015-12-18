@@ -4,16 +4,11 @@ import android.app.ActionBar;
 import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
 import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.TextView;
 
 import com.parse.ParseAnalytics;
 import com.parse.ParseUser;
@@ -109,6 +104,7 @@ public class MainActivity extends FragmentActivity implements
 
 
 
+    /*
     public static class DummySectionFragment extends Fragment {
 
         public static final String ARG_SECTION_NUMBER = "section_number";
@@ -119,7 +115,7 @@ public class MainActivity extends FragmentActivity implements
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_main_dummy,
+            View rootView = inflater.inflate(R.layout.fragment_inbox,
                     container, false);
             TextView dummyTextView = (TextView) rootView
                     .findViewById(R.id.section_label);
@@ -128,6 +124,7 @@ public class MainActivity extends FragmentActivity implements
         }
 
     }
+    */
 
 }
 
